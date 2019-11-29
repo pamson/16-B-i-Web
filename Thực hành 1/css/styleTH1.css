@@ -1,0 +1,236 @@
+body {
+    font-family: "Helvetica Neue" Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    margin: 0px auto;
+}
+
+.wrapper {
+    width: 1109px;
+    height: 100%;
+    margin: 0px auto;
+}
+
+
+/***********header**************/
+
+.page-header {
+    height: 66px;
+    background-color: rgb(43, 42, 42);
+}
+
+.page-header .logo {
+    float: left;
+    box-sizing: border-box;
+}
+
+.page-header .main-nav {
+    float: right;
+}
+
+.main-nav li {
+    float: left;
+    list-style-type: none;
+}
+
+.main-nav li a {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 92px;
+    text-decoration: none;
+    line-height: 33px;
+}
+
+.main-nav a:hover {
+    color: orangered;
+}
+
+.logo img {
+    width: 151px;
+    height: 22px;
+    padding-top: 23px;
+}
+
+
+/****************Main****************/
+
+.banner {
+    height: 544px;
+    background-image: url(../images/banner.png);
+    /* chỉ định kích thước của hình với bìa */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner h1 {
+    margin: 0px auto;
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.banner p {
+    font-size: 21px;
+    color: white;
+    margin: 25px;
+}
+
+.banner-block {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 194px;
+    font-weight: bold;
+}
+
+.banner a {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    display: block;
+    padding: 20px 32px;
+    text-transform: uppercase;
+    font-size: 14px;
+    /* xác định chiều rộng và chiều cao cho phần tử */
+    width: 166px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.banner a:hover {
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ff0000;
+}
+
+
+/************** Article ******************/
+
+.article {
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(-5deg, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-5deg, #ffffff 0%, #ffffff 50%, #ffffff 50%, #000000 50%, #000000 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(95deg, #ffffff 0%, #ffffff 50%, #ffffff 50%, rgb(43, 42, 42) 50%, rgb(43, 42, 42) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.article h2 {
+    margin: 0px auto;
+    font-size: 36px;
+}
+
+.article>.wrapper::after,
+.page-footer>.wrapper::after {
+    content: '.';
+    font-size: 0px;
+    height: 100px;
+    display: block;
+    /* bên trái và phải của thành phần không được float */
+    clear: both;
+}
+
+article {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 60px;
+    line-height: 1.5;
+}
+
+article p {
+    font-size: 15px;
+}
+
+article:first-of-type {
+    padding-right: 65px;
+}
+
+article:last-of-type {
+    padding-left: 65px;
+    color: white;
+}
+
+.quote {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+h2::after {
+    content: '.';
+    font-size: 0px;
+    display: block;
+    width: 38px;
+    height: 2px;
+    background-color: #ca0500;
+    margin: 25px 0px 28px;
+}
+
+
+/********************* Footer **************/
+
+.page-footer {
+    box-sizing: border-box;
+    background-color: #000000;
+    color: white;
+}
+
+.footer-col {
+    width: 25%;
+    float: left;
+    padding-top: 25px;
+    line-height: 1.5;
+    margin-left: -40px;
+}
+
+.page-footer h3 {
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+
+.page-footer h3::after {
+    content: '.';
+    font-size: 0px;
+    display: block;
+    background-color: white;
+    width: 90%;
+    height: 1px;
+    margin: 15px 0px;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding-right: 0px;
+}
+
+#Social ul {
+    display: flex;
+}
+
+.copy {
+    padding-left: 40px;
+    margin-top: 32px;
+}
+
+.fb img {
+    height: 50px;
+    width: 50px;
+}
+
+#Social a {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgb(43, 42, 42);
+    color: #fff;
+    text-align: center;
+    line-height: 44px;
+    margin-left: 20px;
+}
+
+#Social a:hover {
+    background-color: #000;
+}
